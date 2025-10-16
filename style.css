@@ -1,0 +1,131 @@
+* {
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background: linear-gradient(135deg, #f4e8ff 0%, #d6b8ff 100%);
+  overflow-x: hidden;
+}
+
+.btn-dark {
+  background-color: #6a0dad;
+  border: none;
+}
+.btn-dark:hover {
+  background-color: #580c9e;
+}
+.btn-outline-dark:hover {
+  background-color: #6a0dad;
+  color: #fff;
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-brand {
+  color: #6a0dad !important;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #6a0dad !important;
+}
+
+.hero-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.highlight {
+  color: #6a0dad;
+}
+
+.profile-pic {
+  box-shadow: 0 0 25px rgba(106, 13, 173, 0.3);
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 8px solid #eee;
+  object-fit: cover;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+h1 { font-size: 3.2rem; font-weight: 700; }
+h2 { font-size: 2rem; font-weight: 600; }
+p { font-size: 1.05rem; color: #555; }
+
+.project-card {
+  background: white;
+  border-radius: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+a .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(106, 13, 173, 0.25);
+}
+
+.project-card:hover h5 {
+  color: #6a0dad;
+}
+
+footer {
+  background: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #b184f0;
+  border-radius: 10px;
+}
+
+/* Social Icons in Contact Section */
+.social-icons a {
+  color: #000;                 /* Plain black */
+  text-decoration: none;       /* Remove underline */
+  font-size: 2rem;             /* Bigger size */
+  margin: 0 15px;              /* More spacing between icons */
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);  /* Slight lift on hover */
+  color: #6a0dad;               /* Optional: purple on hover */
+}
+
+/* Center profile picture on mobile */
+@media (max-width: 768px) {
+  .hero-image {
+    width: 100% !important;
+    text-align: center; /* Center the image inside the div */
+    margin-top: 30px;   /* Optional: spacing from text */
+  }
+
+  .hero-image .profile-pic {
+    margin: 0 auto;     /* Center the image */
+  }
+}
+
