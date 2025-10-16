@@ -118,14 +118,24 @@ footer {
 
 /* Center profile picture on mobile */
 @media (max-width: 768px) {
-  .hero-image {
-    width: 100% !important;
-    text-align: center; /* Center the image inside the div */
-    margin-top: 30px;   /* Optional: spacing from text */
+
+  /* Container adjustments */
+  .container {
+    padding: 20px 10px;
   }
 
-  .hero-image .profile-pic {
-    margin: 0 auto;     /* Center the image */
+  /* Stack left and right sections vertically */
+  .row.g-4 {
+    flex-direction: column;
+  }
+
+  .col-lg-4, .col-lg-8 {
+    width: 100%;
+  }
+
+  /* Profile card */
+  .col-lg-4 .card {
+    padding: 1.5rem;
+    margin-bottom: 15px;
   }
 }
-
