@@ -116,16 +116,98 @@ footer {
   color: #6a0dad;               /* Optional: purple on hover */
 }
 
-/* Center profile picture on mobile */
+/* ===== MOBILE STYLES ===== */
 @media (max-width: 768px) {
-  .hero-image {
-    width: 100% !important;
-    text-align: center; /* Center the image inside the div */
-    margin-top: 30px;   /* Optional: spacing from text */
+  /* General text adjustments */
+  body {
+    font-size: 14px;
   }
 
-  .hero-image .profile-pic {
-    margin: 0 auto;     /* Center the image */
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  /* Hero section adjustments */
+  .hero-section {
+    text-align: center;
+    padding: 80px 20px;
+  }
+
+  .hero-text {
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text .intro {
+    font-size: 1rem;
+  }
+
+  .hero-image img {
+    width: 180px;
+    height: auto;
+  }
+
+  /* Buttons smaller */
+  .btn {
+    font-size: 0.85rem;
+    padding: 8px 14px;
+  }
+
+  /* Project & Experience cards smaller */
+  .project-card {
+    padding: 1rem;
+  }
+
+  /* About section text */
+  #about p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  /* Contact section */
+  .skill-box h6 {
+    font-size: 0.9rem;
+  }
+
+  .skill-box p {
+    font-size: 0.85rem;
+  }
+
+  /* Social icons spacing */
+  .social-icons a {
+    margin: 0 8px;
+    font-size: 1.2rem;
+  }
+}
+
+/* ===== Extra Small Devices (phones under 480px) ===== */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-image img {
+    width: 150px;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
   }
 }
 
