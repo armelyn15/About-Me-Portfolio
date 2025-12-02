@@ -1,2 +1,3 @@
-# About-Me-Portfolio
-My simple portfolio using HTML, CSS&lt; JavaScript, and Bootstrap.
+Personal Portfolio Website
+
+Built with HTML, CSS, JavaScript, and Bootstrap.

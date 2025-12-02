@@ -1,131 +1,415 @@
+/* ============================================= */
+/* GLOBAL STYLES & RESETS */
+/* ============================================= */
+
+/* Apply smooth transition to ALL elements for interactive effects */
 * {
   transition: all 0.3s ease;
 }
 
+/* Base body styling with gradient background */
 body {
-  font-family: "Poppins", sans-serif;
-  color: #333;
-  background: linear-gradient(135deg, #f4e8ff 0%, #d6b8ff 100%);
-  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;  /* Modern, clean font */
+  color: #333;                         /* Dark gray for text */
+  background: linear-gradient(135deg, #f4e8ff 0%, #d6b8ff 100%); /* Purple gradient */
+  overflow-x: hidden;                  /* Prevent horizontal scrolling */
 }
 
+/* ============================================= */
+/* BUTTON STYLES */
+/* ============================================= */
+
+/* Primary purple button */
 .btn-dark {
-  background-color: #6a0dad;
-  border: none;
+  background-color: #6a0dad;  /* Main purple color */
+  border: none;               /* Remove default border */
 }
+
+/* Darker purple on hover for primary button */
 .btn-dark:hover {
-  background-color: #580c9e;
+  background-color: #580c9e;  /* Slightly darker purple */
 }
+
+/* Outline button that turns purple on hover */
 .btn-outline-dark:hover {
-  background-color: #6a0dad;
-  color: #fff;
+  background-color: #6a0dad;  /* Fill with purple */
+  color: #fff;                /* White text */
 }
 
+/* ============================================= */
+/* NAVIGATION BAR */
+/* ============================================= */
+
+/* Glassmorphism effect for navbar */
 .navbar {
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);          /* Background blur effect */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
 }
 
+/* Brand/logo styling */
 .navbar-brand {
-  color: #6a0dad !important;
-  font-weight: 700;
+  color: #6a0dad !important;  /* Purple brand color */
+  font-weight: 700;           /* Bold font */
 }
 
+/* Navigation links */
 .nav-link {
-  color: #333 !important;
-  font-weight: 500;
-  margin-left: 15px;
-  transition: 0.3s;
+  color: #333 !important;     /* Dark text color */
+  font-weight: 500;           /* Medium font weight */
+  margin-left: 15px;          /* Spacing between links */
+  transition: 0.3s;           /* Smooth color transition */
 }
 
+/* Active/hover state for navigation links */
 .nav-link.active,
 .nav-link:hover {
-  color: #6a0dad !important;
+  color: #6a0dad !important;  /* Purple on active/hover */
 }
+
+/* ============================================= */
+/* HERO SECTION (Main banner/header) */
+/* ============================================= */
 
 .hero-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 80px;      /* Reduced from 120px for mobile */
+  padding-bottom: 80px;   /* Reduced from 120px for mobile */
 }
 
+/* Main headline in hero section - responsive font sizes */
 .hero-text h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;      /* Reduced from 3rem for mobile */
   font-weight: 700;
+  line-height: 1.2;       /* Better line spacing */
 }
 
+/* Purple highlight color class */
 .highlight {
-  color: #6a0dad;
+  color: #6a0dad;         /* Purple accent color */
 }
 
+/* Profile picture styling - responsive sizing */
 .profile-pic {
-  box-shadow: 0 0 25px rgba(106, 13, 173, 0.3);
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  border: 8px solid #eee;
-  object-fit: cover;
+  box-shadow: 0 0 25px rgba(106, 13, 173, 0.3); /* Purple glow shadow */
+  width: 220px;           /* Reduced from 260px */
+  height: 220px;          /* Reduced from 260px */
+  border-radius: 50%;     /* Makes it circular */
+  border: 6px solid #eee; /* Reduced border from 8px */
+  object-fit: cover;      /* Crop image to fit circle */
 }
 
+/* ============================================= */
+/* SECTION SPACING & TYPOGRAPHY */
+/* ============================================= */
+
+/* Standard padding for content sections - responsive */
 .section-padding {
-  padding: 100px 0;
+  padding: 60px 0;        /* Reduced from 100px for mobile */
 }
 
-h1 { font-size: 3.2rem; font-weight: 700; }
-h2 { font-size: 2rem; font-weight: 600; }
-p { font-size: 1.05rem; color: #555; }
+/* Heading styles - responsive */
+h1 { 
+  font-size: 2.5rem;      /* Reduced from 3.2rem */
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h2 { 
+  font-size: 1.75rem;     /* Reduced from 2rem */
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Paragraph text styling - responsive */
+p { 
+  font-size: 1rem;        /* Slightly reduced from 1.05rem */
+  color: #555;            /* Medium gray for better readability */
+  line-height: 1.6;       /* Better readability on mobile */
+}
+
+/* ============================================= */
+/* PROJECT CARDS (Portfolio items) */
+/* ============================================= */
 
 .project-card {
-  background: white;
-  border-radius: 15px;
-  transition: 0.3s;
-  cursor: pointer;
+  background: white;              /* White card background */
+  border-radius: 15px;            /* Rounded corners */
+  transition: 0.3s;               /* Smooth hover effects */
+  cursor: pointer;                /* Pointer cursor on hover */
+  margin-bottom: 20px;            /* Add spacing between cards on mobile */
 }
 
+/* Hover effect when card is inside a link */
 a .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(106, 13, 173, 0.25);
+  transform: translateY(-5px);    /* Lift up slightly */
+  box-shadow: 0px 10px 20px rgba(106, 13, 173, 0.25); /* Purple shadow */
 }
 
+/* Change card title color on hover */
 .project-card:hover h5 {
+  color: #6a0dad;                 /* Purple text on hover */
+}
+
+/* Ensure proper alignment for the project container */
+.project-container {
+  display: flex;               /* Use flexbox for alignment */
+  flex-wrap: wrap;             /* Allow wrapping of items */
+  justify-content: center;     /* Center items horizontally */
+  align-items: flex-start;     /* Align items at the top */
+  gap: 20px;                   /* Add spacing between items */
+  padding: 20px;               /* Add padding around the container */
+}
+
+/* Center the Online Ordering System project container */
+#projects .project-card:nth-child(4) {
+  margin: 0 auto; /* Center the specific project card */
+}
+
+/* ============================================= */
+/* FOOTER */
+/* ============================================= */
+
+footer {
+  background: #fff;  /* White background */
+  padding: 30px 0;   /* Add some padding */
+}
+
+/* ============================================= */
+/* CUSTOM SCROLLBAR */
+/* ============================================= */
+
+/* Webkit browsers (Chrome, Safari, Edge) scrollbar */
+::-webkit-scrollbar {
+  width: 8px;                    /* Thin scrollbar */
+}
+
+/* Scrollbar thumb (the moving part) */
+::-webkit-scrollbar-thumb {
+  background: #b184f0;           /* Light purple */
+  border-radius: 10px;           /* Rounded edges */
+}
+
+/* ============================================= */
+/* SOCIAL ICONS (Contact section) */
+/* ============================================= */
+
+.social-icons a {
+  color: #000;                 /* Plain black icons */
+  text-decoration: none;       /* Remove underline */
+  font-size: 1.75rem;          /* Slightly reduced from 2rem */
+  margin: 0 10px;              /* Reduced spacing for mobile */
+  transition: transform 0.3s, color 0.3s; /* Smooth hover animations */
+  display: inline-block;       /* Better control */
+}
+
+/* Social icon hover effects */
+.social-icons a:hover {
+  transform: translateY(-3px);  /* Lift effect */
+  color: #6a0dad;               /* Optional purple on hover */
+}
+
+/* ============================================= */
+/* RESPONSIVE DESIGN (Mobile-first approach) */
+/* ============================================= */
+
+/* Base mobile styles (applies to all screens) */
+.hero-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Tablet styles (min-width: 768px) */
+@media (min-width: 768px) {
+  .hero-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+  
+  .profile-pic {
+    width: 260px;
+    height: 260px;
+    border-width: 8px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1.05rem;
+  }
+  
+  .section-padding {
+    padding: 80px 0;
+  }
+  
+  .social-icons a {
+    font-size: 2rem;
+    margin: 0 15px;
+  }
+}
+
+/* Desktop styles (min-width: 992px) */
+@media (min-width: 992px) {
+  .hero-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3.2rem;
+  }
+  
+  h1 {
+    font-size: 3.2rem;
+  }
+  
+  .section-padding {
+    padding: 100px 0;
+  }
+}
+
+/* Mobile-specific adjustments (max-width: 767px) */
+@media (max-width: 767px) {
+  /* Center the image container */
+  .hero-image {
+    width: 100% !important;
+    text-align: center;
+    margin-top: 30px;
+    order: -1; /* Place image above text on very small screens */
+  }
+
+  /* Center the profile picture inside its container */
+  .hero-image .profile-pic {
+    margin: 0 auto;
+    width: 200px;   /* Even smaller for very small phones */
+    height: 200px;
+    border-width: 5px;
+  }
+  
+  /* Stack hero content vertically */
+  .hero-section .row {
+    flex-direction: column;
+  }
+  
+  .hero-text {
+    text-align: center; /* Center text on mobile */
+    margin-bottom: 30px;
+  }
+  
+  /* Adjust button sizing for mobile */
+  .btn {
+    display: inline-block;
+    width: auto; /* Don't stretch buttons full width */
+    padding: 10px 25px;
+  }
+  
+  /* Improve navigation for mobile */
+  .navbar-nav {
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  .nav-link {
+    margin-left: 0;
+    margin: 5px 0;
+  }
+  
+  /* Better spacing for project cards on mobile */
+  .project-card {
+    margin-bottom: 25px;
+  }
+  
+  /* Adjust social icons for very small screens */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .social-icons a {
+    margin: 5px 8px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575px) {
+  .hero-text h1 {
+    font-size: 2rem; /* Even smaller for very small screens */
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .section-padding {
+    padding: 40px 0;
+  }
+}
+
+/* ============================================= */
+/* PROJECT BUTTON STYLES */
+/* ============================================= */
+
+/* Project buttons styling */
+.project-card .btn {
+  min-width: 110px;
+  transition: all 0.3s ease;
+}
+
+.project-card .btn-dark {
+  background-color: #6a0dad;
+  border-color: #6a0dad;
+}
+
+.project-card .btn-dark:hover {
+  background-color: #580c9e;
+  border-color: #580c9e;
+}
+
+.project-card .btn-outline-dark {
+  border-color: #6a0dad;
   color: #6a0dad;
 }
 
-footer {
-  background: #fff;
+.project-card .btn-outline-dark:hover {
+  background-color: #6a0dad;
+  border-color: #6a0dad;
+  color: white;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-thumb {
-  background: #b184f0;
-  border-radius: 10px;
+/* Ensure buttons stay at bottom of card */
+.project-card {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Social Icons in Contact Section */
-.social-icons a {
-  color: #000;                 /* Plain black */
-  text-decoration: none;       /* Remove underline */
-  font-size: 2rem;             /* Bigger size */
-  margin: 0 15px;              /* More spacing between icons */
-  transition: transform 0.3s, color 0.3s;
+.project-buttons {
+  margin-top: auto;
+  padding-top: 15px;
 }
 
-.social-icons a:hover {
-  transform: translateY(-3px);  /* Slight lift on hover */
-  color: #6a0dad;               /* Optional: purple on hover */
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
-
-/* Center profile picture on mobile */
-@media (max-width: 768px) {
-  .hero-image {
-    width: 100% !important;
-    text-align: center; /* Center the image inside the div */
-    margin-top: 30px;   /* Optional: spacing from text */
-  }
-
-  .hero-image .profile-pic {
-    margin: 0 auto;     /* Center the image */
-  }
-}
-

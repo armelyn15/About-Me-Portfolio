@@ -49,25 +49,32 @@
     </nav>
 
     <!-- ===== HERO SECTION ===== -->
-    <section id="home" class="hero-section d-flex align-items-center text-center text-lg-start">
-      <div class="container d-flex flex-wrap align-items-center justify-content-between">
-        <div class="hero-text col-lg-6">
-          <p class="intro">Hey, I'm <span class="fw-semibold text-purple">Armelyn</span></p>
-          <h1><span class="highlight text-purple">Frontend</span> Developer</h1>
-          <p class="text-muted mt-3">
-            I’m a frontend developer who enjoys creating clean and easy-to-use
-            websites that deliver smooth user experiences.
-          </p>
-          <div class="mt-4">
-            <a href="#contact" class="btn btn-dark me-2">Get in Touch</a>
-            <a href="#projects" class="btn btn-outline-dark">Browse Projects</a>
-          </div>
-        </div>
-        <div class="hero-image col-lg-5 text-center mt-5 mt-lg-0">
-          <img src="profile.jpg" alt="Profile" class="profile-pic shadow-lg" />
-        </div>
-      </div>
-    </section>
+<section id="home" class="hero-section text-center">
+  <div class="container">
+    <!-- Profile Image at the top -->
+    <div class="mb-4">
+      <img src="profile.jpg" alt="Profile" class="profile-pic" />
+    </div>
+    
+    <!-- Title and text centered -->
+    <h1 class="fw-bold mb-3">Frontend Developer</h1>
+    <p class="hero-subtitle mx-auto mb-4">
+      I'm a frontend developer who enjoys creating clean and easy-to-use<br>
+      websites that deliver smooth user experiences.
+    </p>
+    
+    <!-- Download Resume Button -->
+    <div class="mt-3">
+      <a href="resume.pdf" 
+         class="btn btn-outline-dark btn-lg px-4" 
+         download="ArmelynMacedonioResume.pdf"
+         target="_blank"
+         rel="noopener noreferrer">
+        <i class="fas fa-download me-2"></i>Download Resume
+      </a>
+    </div>
+  </div>
+</section>
 
     <!-- ===== ABOUT ===== -->
     <section id="about" class="section-padding bg-light text-center">
@@ -82,37 +89,87 @@
     </section>
 
     <!-- ===== PROJECTS ===== -->
-   <section id="projects" class="section-padding text-center">
+<section id="projects" class="section-padding text-center">
   <div class="container">
     <h2 class="fw-bold text-purple mb-3">Projects</h2>
-    <p class="text-muted mb-5">Here are some of my favorite works.</p>
+    <p class="text-muted mb-5">Here are some of my works.</p>
     <div class="row g-4">
       
-      <div class="col-md-4">
-        <a href="https://github.com/armelyn15/Mabini-Tourist-Spot.git" target="_blank" class="text-decoration-none text-dark">
-          <div class="project-card p-4 shadow-sm rounded h-100">
-            <h5>Mabini Tourism Spot</h5>
-            <p>Shows the beautiful tourist spots in Mabini, Batangas.</p>
-          </div>
-        </a>
-      </div>
+      <!-- Project 1 -->
+<div class="col-md-4">
+  <div class="project-card p-4 shadow-sm rounded h-100 d-flex flex-column">
+    <img src="tourism.png" class="project-img" alt="Mabini Tourism">
+    <div class="flex-grow-1">
+      <h5>Mabini Tourism Spot</h5>
+      <p>Shows the beautiful tourist spots in Mabini, Batangas.</p>
+    </div>
+    <div class="mt-3">
+      <a href="https://mabini-tourist-spot-2kw6ut83y-armelyn15s-projects.vercel.app/" target="_blank" class="btn btn-dark btn-sm me-2">
+        <i class="fas fa-external-link-alt me-1"></i>Live Demo
+      </a>
+      <a href="https://github.com/armelyn15/Mabini-Tourist-Spot.git" target="_blank" class="btn btn-outline-dark btn-sm">
+        <i class="fab fa-github me-1"></i>Source Code
+      </a>
+    </div>
+  </div>
+</div>
 
+
+      <!-- Project 2 -->
       <div class="col-md-4">
-        <a href="https://github.com/armelyn15/About-Me-Portfolio.git" target="_blank" class="text-decoration-none text-dark">
-          <div class="project-card p-4 shadow-sm rounded h-100">
+     <div class="project-card p-4 shadow-sm rounded h-100 d-flex flex-column">
+    <img src="ecommerce.png" class="project-img" alt="ECommerce - Home Decor">
+    <div class="flex-grow-1">
+      <h5>ECommerce - Home Decor</h5>
+      <p>A home decor ecommerce with simple pieces for modern homes.</p>
+    </div>
+    <div class="mt-3">
+      <a href="https://armelyn15.github.io/E-Commerce-Home-Decor-/" target="_blank" class="btn btn-dark btn-sm me-2">
+        <i class="fas fa-external-link-alt me-1"></i>Live Demo
+      </a>
+      <a href="https://github.com/armelyn15/E-Commerce-Home-Decor-.git" target="_blank" class="btn btn-outline-dark btn-sm">
+        <i class="fab fa-github me-1"></i>Source Code
+      </a>
+    </div>
+  </div>
+</div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4">
+        <div class="project-card p-4 shadow-sm rounded h-100 d-flex flex-column">
+          <img src="portfolio.png" class="project-img" alt="Portfolio">
+          <div class="flex-grow-1">
             <h5>My Portfolio</h5>
-            <p>A minimalist portfolio built with HTML, CSS, and JavaScript.</p>
+            <p>A personal portfolio built with HTML, CSS, and JavaScript.</p>
           </div>
-        </a>
+          <div class="mt-3">
+            <a href="https://armelyn15.github.io/About-Me-Portfolio/" target="_blank" class="btn btn-dark btn-sm me-2">
+              <i class="fas fa-external-link-alt me-1"></i>Live Demo
+            </a>
+            <a href="https://github.com/armelyn15/About-Me-Portfolio.git" target="_blank" class="btn btn-outline-dark btn-sm">
+              <i class="fab fa-github me-1"></i>Source Code
+            </a>
+          </div>
+        </div>
       </div>
 
+      <!-- Project 4 -->
       <div class="col-md-4">
-        <a href="https://github.com/armelyn15/Filesystem-Management---user-and-group-management.git" target="_blank" class="text-decoration-none text-dark">
-          <div class="project-card p-4 shadow-sm rounded h-100">
-            <h5>Linux User and Group Management</h5>
-            <p>Created Linux admin and staff users with access controls.</p>
+        <div class="project-card p-4 shadow-sm rounded h-100 d-flex flex-column">
+          <img src="ordering.png" class="project-img" alt="Online Ordering System">
+          <div class="flex-grow-1">
+            <h5>Online Ordering System</h5>
+            <p>A milktea online ordering system.</p>
           </div>
-        </a>
+          <div class="mt-3">
+            <a href="https://armelyn15.github.io/Bloom-Brew/login.html" target="_blank" class="btn btn-dark btn-sm me-2">
+              <i class="fas fa-external-link-alt me-1"></i>Live Demo
+            </a>
+            <a href="https://github.com/armelyn15/Bloom-Brew.git" target="_blank" class="btn btn-outline-dark btn-sm">
+              <i class="fab fa-github me-1"></i>Source Code
+            </a>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -127,6 +184,7 @@
     <div class="row g-4 justify-content-center">
       <div class="col-md-4">
         <div class="project-card p-4 shadow-sm rounded h-100">
+          <img src="college.png" class="project-img mb-3" alt="College Image">
           <h5>College Level</h5>
           <h6>Batangas State University TNEU</h6>
           <p>2023 - Present</p>
@@ -135,9 +193,10 @@
       </div>
       <div class="col-md-4">
         <div class="project-card p-4 shadow-sm rounded h-100">
+          <img src="highschool.png" class="project-img mb-3" alt="High School Image">
           <h5>Senior High School Graduate</h5>
           <h6>Anselmo A. Sandoval MNHS</h6>
-          <p>2020-2021 | ICT Strand</p>
+          <p>2015-2021 | ICT Strand</p>
           <p>Learned basic programming, design, and digital skills</p>
         </div>
       </div>
@@ -166,16 +225,16 @@
     <div class="col-md-4">
       <div class="p-3 skill-box">
         <h6><i class="fa-solid fa-house"></i> LOCATION</h6>
-        <p>Batangas City, Philippines</p>
+        <p>Mabini, Batangas City, Philippines</p>
       </div>
     </div>
 
     <!-- Social Icons -->
     <div class="social-icons mt-4">
-  <a href="https://github.com/yourusername" target="_blank">
+  <a href="https://github.com/armelyn15" target="_blank">
     <i class="fab fa-github"></i>
   </a>
-  <a href="https://www.linkedin.com/in/yourusername" target="_blank">
+  <a href="www.linkedin.com/in/armelyn-macedonio-b30744389" target="_blank">
     <i class="fab fa-linkedin"></i>
   </a>
 </div>
@@ -183,7 +242,7 @@
 
     <!-- ===== FOOTER ===== -->
     <footer class="text-center py-3 bg-white">
-      <p class="text-muted mb-0">© 2025 Armelyn D. All rights reserved.</p>
+      <p class="text-muted mb-0">© 2025 Armelyn M. All rights reserved.</p>
     </footer>
 
     <!-- Bootstrap JS -->
